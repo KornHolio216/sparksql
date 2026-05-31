@@ -1,0 +1,9 @@
+.venv/
+venv/
+**pycache**/
+*.pyc
+.idea/
+.vscode/
+output/
+*.log
+.DS_Store

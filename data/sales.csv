@@ -1,0 +1,11 @@
+id,data,miasto,produkt,kategoria,ilosc,cena
+1,2026-05-01,Bydgoszcz,Laptop,Elektronika,2,3500
+2,2026-05-01,Warszawa,Mysz,Elektronika,10,80
+3,2026-05-02,Krakow,Biurko,Meble,3,700
+4,2026-05-02,Bydgoszcz,Krzeslo,Meble,5,250
+5,2026-05-03,Warszawa,Monitor,Elektronika,4,900
+6,2026-05-03,Gdansk,Laptop,Elektronika,1,3600
+7,2026-05-04,Krakow,Krzeslo,Meble,8,230
+8,2026-05-04,Gdansk,Biurko,Meble,2,750
+9,2026-05-05,Bydgoszcz,Monitor,Elektronika,3,950
+10,2026-05-05,Warszawa,Laptop,Elektronika,1,3400
