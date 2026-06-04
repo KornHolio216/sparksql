@@ -1,17 +1,36 @@
-# Spark SQL LAB10
+# Apache Spark Structured Streaming
 
-Prosty projekt wykonany w ramach laboratorium z Nowoczesnych Technologii Przetwarzania Danych.
+## Cel ćwiczenia
 
-Projekt pokazuje podstawowe użycie Spark SQL w PySpark:
-- wczytanie danych z pliku CSV,
-- zapis i odczyt danych w formacie Parquet,
-- rejestrację DataFrame jako widok tymczasowy,
-- wykonanie zapytań SQL: agregacje, grupowanie, filtrowanie oraz JOIN,
-- zapis wyniku zapytania do CSV i Parquet.
+Celem laboratorium było przygotowanie aplikacji PySpark wykorzystującej Apache Spark Structured Streaming. W projekcie wczytuję dane strumieniowo z plików CSV dodawanych do folderu wejściowego, wykonuję czyszczenie danych, transformacje, agregacje według kategorii, agregacje w oknach czasowych, watermarking oraz zapis wyników do plików Parquet z checkpointingiem.
+
 
 ## Uruchomienie
 
+Najpierw instaluję zależności:
+
 ```bash
 pip install -r requirements.txt
-python spark_sql_lab10.py
 ```
+
+W pierwszym terminalu uruchamiam aplikację Spark Structured Streaming:
+
+```bash
+python structured_streaming.py
+```
+
+W drugim terminalu uruchamiam generator danych:
+
+```bash
+python generate_stream_files.py
+```
+
+Generator automatycznie dodaje kolejne pliki CSV do folderu `data/input_stream`. Aplikacja Spark działa cały czas i przetwarza nowe pliki bez restartu programu.
+
+Po zatrzymaniu aplikacji mogę sprawdzić zapisane wyniki Parquet:
+
+```bash
+python check_output.py
+```
+
+Zatrzymanie aplikacji streamingowej wykonuję przez `Ctrl+C`.

@@ -7,3 +7,7 @@ venv/
 output/
 *.log
 .DS_Store
+data/output_stream/
+checkpoints/
+data/input_stream/*
+!data/input_stream/.gitkeep
