@@ -1,12 +1,14 @@
 .venv/
 venv/
-**pycache**/
+__pycache__/
 *.pyc
 .idea/
 .vscode/
+
 output/
 *.log
 .DS_Store
+
 data/output_stream/
 checkpoints/
 data/input_stream/*
