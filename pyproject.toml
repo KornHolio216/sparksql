@@ -1,0 +1,21 @@
+[project]
+name = "retailpulse-ai"
+version = "0.1.0"
+description = "Educational PySpark retail analytics data pipeline with deterministic synthetic data."
+requires-python = ">=3.10,<3.13"
+dependencies = [
+    "pyspark>=4.0,<5.0",
+    "tzdata>=2025.2",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0,<10.0",
+]
+
+[tool.pytest.ini_options]
+addopts = "-p no:cacheprovider"
+testpaths = ["tests"]
+
+[tool.setuptools.packages.find]
+include = ["pipelines*"]
